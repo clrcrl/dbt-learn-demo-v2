@@ -2,6 +2,6 @@
 
     This is my docs block.
 
-![dbt-logo](assets/dbt-logo-full.png)
+![dbt-logo](assets/dbt-logo-full.svg)
 
 {% enddocs %}
