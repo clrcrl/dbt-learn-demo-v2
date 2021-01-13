@@ -2,14 +2,14 @@ version: 2
 
 models:
 
-  - name: dim_customers
+  - name: customers
     columns:
       - name: customer_id
         tests:
           - unique
           - not_null
 
-  - name: fct_orders
+  - name: orders
     description: One record per order
     columns:
       - name: order_id
