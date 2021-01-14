@@ -4,6 +4,7 @@ with customers as (
 orders as (
     select * from {{ ref('stg_orders')}}
 ),
+
 customer_orders as (
     select
         customer_id,
@@ -14,7 +15,9 @@ customer_orders as (
     group by 1
 ),
 final as (
+    
     select
+
         customers.customer_id,
         customers.first_name,
         customers.last_name,
