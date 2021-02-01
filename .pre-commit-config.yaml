@@ -2,8 +2,8 @@ repos:
 - repo: https://github.com/offbi/pre-commit-dbt
   rev: v0.1.0
   hooks:
+  - id: dbt-clean
+  - id: dbt-compile
   - id: check-script-semicolon
   - id: check-script-has-no-table-name
-  - id: dbt-test
-  - id: dbt-docs-generate
   - id: check-model-has-all-columns
